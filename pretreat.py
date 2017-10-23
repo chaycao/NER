@@ -346,19 +346,19 @@ def load(fname):
     print (len(X), len(y), len(vocab), len(indexVocab))
     return (X, y), (initProb, tranProb), (vocab, indexVocab)
 
-if __name__ == '__main__':
-    start_time = time.time()
 
-    if len(sys.argv) < 4:
-        print (globals()['__doc__'] % locals())
-        sys.exit(1)
-    input_file, training_info_filePath, training_data_filePath = sys.argv[1:4]
+# main
+start_time = time.time()
 
-    (X, y), (initProb, tranProb), (vocab, indexVocab) = load(input_file)
-    # TrainInfo：词向量和词典的相关情况
-    saveTrainingInfo(training_info_filePath, ((initProb, tranProb), (vocab, indexVocab)))
-    # TrainData：将字表示为向量和标记
-    saveTrainingData(training_data_filePath, (X, y))
+input_file = "./word2vec_model/dataset/小数据5000/original_with_tag.utf8"
+training_info_filePath = "./ner_training.info"
+training_data_filePath = "./ner_training.data"
 
-    end_time = time.time()
-    print("used time : %d s" % (end_time - start_time))
+(X, y), (initProb, tranProb), (vocab, indexVocab) = load(input_file)
+# TrainInfo：词向量和词典的相关情况
+saveTrainingInfo(training_info_filePath, ((initProb, tranProb), (vocab, indexVocab)))
+# TrainData：将字表示为向量和标记
+saveTrainingData(training_data_filePath, (X, y))
+
+end_time = time.time()
+print("used time : %d s" % (end_time - start_time))

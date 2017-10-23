@@ -23,6 +23,7 @@ from keras.models import Sequential, model_from_json
 from keras.layers.core import Dense, Dropout, Activation
 from keras.layers.embeddings import Embedding
 from keras.layers.recurrent import LSTM, GRU, SimpleRNN
+from keras.callbacks import EarlyStopping
 
 from gensim.models import Word2Vec
 
@@ -69,8 +70,11 @@ def train(trainingInfo, trainingData, modelPath, weightPath, word2vec_model_file
     model.add(Activation('softmax'))
     model.compile(loss = 'categorical_crossentropy', optimizer = 'adam', metrics=["accuracy"])
 
+    early_stopping = EarlyStopping(monitor="val_acc", patience=3)
+
     result = model.fit(train_X, Y_train, batch_size = batchSize, 
-                    nb_epoch = 20, validation_data = (test_X,Y_test))
+                    validation_data = (test_X,Y_test),
+                    callbacks=[early_stopping])
 
     j = model.to_json()
     fd = open(modelPath, 'w')
@@ -81,21 +85,22 @@ def train(trainingInfo, trainingData, modelPath, weightPath, word2vec_model_file
 
     return model
 
-if __name__ == '__main__':
-    if len(sys.argv) < 6:
-        print (globals()['__doc__'] % locals())
-        sys.exit(1)
-    training_info_filePath, training_data_filePath, output_keras_model_file, output_keras_model_weights_file, word2vec_model_file = sys.argv[1:6]
+# main
+training_info_filePath = "./ner_training.info"
+training_data_filePath = "./ner_training.data"
+output_keras_model_file = "./ner_keras_model"
+output_keras_model_weights_file = "./keras_model_weights"
+word2vec_model_file = "./word2vec_model/model/char2vec.model"
 
-    print ('Loading vocab...')
-    start_time = time.time()
-    trainingInfo = pretreat.loadTrainingInfo(training_info_filePath)
-    trainingData = pretreat.loadTrainingData(training_data_filePath)
-    print("Loading used time : ", time.time() - start_time)
-    print ('Done!')
+print ('Loading vocab...')
+start_time = time.time()
+trainingInfo = pretreat.loadTrainingInfo(training_info_filePath)
+trainingData = pretreat.loadTrainingData(training_data_filePath)
+print("Loading used time : ", time.time() - start_time)
+print ('Done!')
 
-    print ('Training model...')
-    start_time = time.time()
-    model = train(trainingInfo, trainingData, output_keras_model_file, output_keras_model_weights_file, word2vec_model_file)
-    print("Training used time : ", time.time() - start_time)
-    print ('Done!')
+print ('Training model...')
+start_time = time.time()
+model = train(trainingInfo, trainingData, output_keras_model_file, output_keras_model_weights_file, word2vec_model_file)
+print("Training used time : ", time.time() - start_time)
+print ('Done!')
