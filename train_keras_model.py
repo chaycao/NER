@@ -23,6 +23,7 @@ from keras.models import Sequential, model_from_json
 from keras.layers.core import Dense, Dropout, Activation
 from keras.layers.embeddings import Embedding
 from keras.layers.recurrent import LSTM, GRU, SimpleRNN
+from keras.layers import Bidirectional, TimeDistributed
 from keras.callbacks import EarlyStopping
 
 from gensim.models import Word2Vec
@@ -61,18 +62,33 @@ def train(trainingInfo, trainingData, modelPath, weightPath, word2vec_model_file
 
     #LSTM
     model = Sequential()
-    model.add(Embedding(output_dim = embeddingDim, input_dim = vocabSize + 1, 
-        input_length = maxlen, mask_zero = True, weights = [embeddingWeights]))
-    model.add(LSTM(output_dim = hiddenDims, return_sequences = True))
-    model.add(LSTM(output_dim = hiddenDims, return_sequences = False))
+    model.add(Embedding(output_dim = embeddingDim, input_dim = vocabSize + 1,
+    input_length = maxlen, mask_zero = True, weights = [embeddingWeights]))
+
+    # delete 2017.10.23
+    # model.add(LSTM(output_dim = hiddenDims, return_sequences = True))
+    # model.add(LSTM(output_dim = hiddenDims, return_sequences = False))
+    # model.add(Dropout(0.5))
+    # model.add(Dense(outputDims))
+    # model.add(Activation('softmax'))
+    # delete end
+
+    # add 2017.10.23
+    model.add(Bidirectional(LSTM(output_dim = hiddenDims, return_sequences = False), merge_mode='sum'))
     model.add(Dropout(0.5))
-    model.add(Dense(outputDims))
-    model.add(Activation('softmax'))
+    model.add(Dense(outputDims, activation="softmax"))
+    # model.add(Bidirectional(LSTM(64, return_sequences=True), merge_mode='sum'))
+    # output = TimeDistributed(Dense(5, activation='softmax'))
+    # add end
+
+    print(model.summary())
+
     model.compile(loss = 'categorical_crossentropy', optimizer = 'adam', metrics=["accuracy"])
 
     early_stopping = EarlyStopping(monitor="val_acc", patience=3)
 
-    result = model.fit(train_X, Y_train, batch_size = batchSize, 
+    result = model.fit(train_X, Y_train, batch_size = batchSize,
+                    epochs = 100,
                     validation_data = (test_X,Y_test),
                     callbacks=[early_stopping])
 
