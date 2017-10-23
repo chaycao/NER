@@ -19,8 +19,8 @@ start_time = time.time()
 # logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
 # logger.info("running %s" % ' '.join(sys.argv))
 
-input_file = "./dataset/小数据5000/original_with_tag.utf8"
-output_file =  "./dataset/小数据5000/original_split.utf8"
+input_file = "./data/小数据5000/original_with_tag.utf8"
+output_file =  "./data/小数据5000/original_split.utf8"
 
 output_file_handler = open(output_file, 'w', encoding='utf-8')
 for line in open(input_file, 'r', encoding='utf-8'):

@@ -350,7 +350,7 @@ def load(fname):
 # main
 start_time = time.time()
 
-input_file = "./word2vec_model/dataset/小数据5000/original_with_tag.utf8"
+input_file = "./word2vec_model/data/小数据5000/original_with_tag.utf8"
 training_info_filePath = "./ner_training.info"
 training_data_filePath = "./ner_training.data"
 

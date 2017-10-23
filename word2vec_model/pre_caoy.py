@@ -31,8 +31,8 @@ def randomSelect(input_file, output_file, num):
 
 # start
 start_time = time.time()
-input_file = "./dataset/小数据5000/original_split.utf8"
-output_file =  "./dataset/小数据5000/original_split_word.utf8"
+input_file = "./data/小数据5000/original_split.utf8"
+output_file =  "./data/小数据5000/original_split_word.utf8"
 
 # content
 splitChar(input_file, output_file)

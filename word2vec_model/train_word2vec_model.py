@@ -35,7 +35,7 @@ start_time = time.time()
 #     print (globals()['__doc__'] % locals())
 #     sys.exit(1)
 
-input_file = './dataset/小数据5000/original_split_char.utf8'
+input_file = './data/小数据5000/original_split_char.utf8'
 output_model_file = './model/小数据5000/char2vec.model'
 output_vector_file = './model/小数据5000/char2vec.vector'
 
