@@ -1,1 +1,0 @@
-python ./prepare_word2vec_train_dataset.py ./dataset/original_with_tag.utf8 ./dataset/original_split.utf8

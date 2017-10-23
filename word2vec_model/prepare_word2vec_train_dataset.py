@@ -11,35 +11,31 @@ import multiprocessing
 import time
 import json
 
-if __name__ == '__main__':
-    start_time = time.time()
-    
-    program = os.path.basename(sys.argv[0])
-    logger = logging.getLogger(program)
- 
-    logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
-    logger.info("running %s" % ' '.join(sys.argv))
- 
-    # check and process input arguments
-    if len(sys.argv) < 3:
-        print (globals()['__doc__'] % locals())
-        sys.exit(1)
-    input_file, output_file = sys.argv[1:3]
+start_time = time.time()
 
-    output_file_handler = open(output_file, 'w', encoding='utf-8')
-    for line in open(input_file, 'r', encoding='utf-8'):
-    	new_line = ''
-    	words = line.strip().split()
-    	for word in words:
-    		word = word.strip('[ ')
-    		end_index = word.find(']')
-    		if end_index >= 0:
-    			word = word[0:end_index]
-    		word, tag = word.split('/')
-    		new_line = new_line + word + ' '
-    	output_file_handler.write(new_line.strip() + '\n')
-    	output_file_handler.flush()
-    output_file_handler.close()
+# program = os.path.basename(sys.argv[0])
+# logger = logging.getLogger(program)
+#
+# logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
+# logger.info("running %s" % ' '.join(sys.argv))
 
-    end_time = time.time()
-    print("used time : %d s" % (end_time - start_time))
+input_file = "./dataset/小数据5000/original_with_tag.utf8"
+output_file =  "./dataset/小数据5000/original_split.utf8"
+
+output_file_handler = open(output_file, 'w', encoding='utf-8')
+for line in open(input_file, 'r', encoding='utf-8'):
+    new_line = ''
+    words = line.strip().split()
+    for word in words:
+        word = word.strip('[ ')
+        end_index = word.find(']')
+        if end_index >= 0:
+            word = word[0:end_index]
+        word, tag = word.split('/')
+        new_line = new_line + word + ' '
+    output_file_handler.write(new_line.strip() + '\n')
+    output_file_handler.flush()
+output_file_handler.close()
+
+end_time = time.time()
+print("used time : %d s" % (end_time - start_time))
