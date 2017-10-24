@@ -351,8 +351,8 @@ def load(fname):
 start_time = time.time()
 
 input_file = "./word2vec_model/data/小数据5000/original_with_tag.utf8"
-training_info_filePath = "./ner_training.info"
-training_data_filePath = "./ner_training.data"
+training_info_filePath = "./ner_training_char.info"
+training_data_filePath = "./ner_training_char.data"
 
 (X, y), (initProb, tranProb), (vocab, indexVocab) = load(input_file)
 # TrainInfo：词向量和词典的相关情况

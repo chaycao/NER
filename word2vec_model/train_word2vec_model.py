@@ -35,9 +35,9 @@ start_time = time.time()
 #     print (globals()['__doc__'] % locals())
 #     sys.exit(1)
 
-input_file = './data/小数据5000/original_split_char.utf8'
-output_model_file = './model/小数据5000/char2vec.model'
-output_vector_file = './model/小数据5000/char2vec.vector'
+input_file = './data/小数据5000/original_split.utf8'
+output_model_file = './model/小数据5000/word2vec.model'
+output_vector_file = './model/小数据5000/word2vec.vector'
 
 model = Word2Vec(LineSentence(input_file), size=128, window=5, min_count=5,
         workers=multiprocessing.cpu_count())

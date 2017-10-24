@@ -25,6 +25,7 @@ from keras.layers.embeddings import Embedding
 from keras.layers.recurrent import LSTM, GRU, SimpleRNN
 from keras.layers import Bidirectional, TimeDistributed
 from keras.callbacks import EarlyStopping
+from keras.layers import crf,ChainCRF
 
 from gensim.models import Word2Vec
 
@@ -60,6 +61,8 @@ def train(trainingInfo, trainingData, modelPath, weightPath, word2vec_model_file
             e = embeddingUnknown
         embeddingWeights[index, :] = e
 
+    print("x_shape:"+str(train_X.shape))
+    print("y_shape:" + str(train_y.shape))
     #LSTM
     model = Sequential()
     model.add(Embedding(output_dim = embeddingDim, input_dim = vocabSize + 1,
@@ -77,8 +80,6 @@ def train(trainingInfo, trainingData, modelPath, weightPath, word2vec_model_file
     model.add(Bidirectional(LSTM(output_dim = hiddenDims, return_sequences = False), merge_mode='sum'))
     model.add(Dropout(0.5))
     model.add(Dense(outputDims, activation="softmax"))
-    # model.add(Bidirectional(LSTM(64, return_sequences=True), merge_mode='sum'))
-    # output = TimeDistributed(Dense(5, activation='softmax'))
     # add end
 
     print(model.summary())
@@ -86,7 +87,6 @@ def train(trainingInfo, trainingData, modelPath, weightPath, word2vec_model_file
     model.compile(loss = 'categorical_crossentropy', optimizer = 'adam', metrics=["accuracy"])
 
     early_stopping = EarlyStopping(monitor="val_acc", patience=3)
-
     result = model.fit(train_X, Y_train, batch_size = batchSize,
                     epochs = 100,
                     validation_data = (test_X,Y_test),
@@ -102,8 +102,8 @@ def train(trainingInfo, trainingData, modelPath, weightPath, word2vec_model_file
     return model
 
 # main
-training_info_filePath = "./ner_training.info"
-training_data_filePath = "./ner_training.data"
+training_info_filePath = "./ner_training_char.info"
+training_data_filePath = "./ner_training_char.data"
 output_keras_model_file = "./ner_keras_model"
 output_keras_model_weights_file = "./keras_model_weights"
 word2vec_model_file = "./word2vec_model/model/char2vec.model"

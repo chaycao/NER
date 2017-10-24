@@ -13,12 +13,6 @@ import json
 
 start_time = time.time()
 
-# program = os.path.basename(sys.argv[0])
-# logger = logging.getLogger(program)
-#
-# logging.basicConfig(format='%(asctime)s : %(levelname)s : %(message)s', level=logging.INFO)
-# logger.info("running %s" % ' '.join(sys.argv))
-
 input_file = "./data/小数据5000/original_with_tag.utf8"
 output_file =  "./data/小数据5000/original_split.utf8"
 
