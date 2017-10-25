@@ -12,7 +12,6 @@ import time
 import sys
 
 from pretreat import corpus_tags,loadTrainingInfo,loadTrainingData
-import viterbi
 
 from sklearn import model_selection
 
@@ -25,7 +24,7 @@ from keras.layers.embeddings import Embedding
 from keras.layers.recurrent import LSTM, GRU, SimpleRNN
 from keras.layers import Bidirectional, TimeDistributed
 from keras.callbacks import EarlyStopping
-from keras.layers import crf,ChainCRF
+from keras.layers import ChainCRF
 
 from gensim.models import Word2Vec
 
@@ -70,10 +69,12 @@ def train(trainingInfo, trainingData, modelPath, weightPath, word2vec_model_file
     model.add(Bidirectional(LSTM(output_dim=hiddenDims, return_sequences=True), merge_mode='sum'))
     model.add(Dropout(0.5))
     model.add(TimeDistributed(Dense(outputDims, activation="softmax")))
-
+    crf = ChainCRF()
+    model.add(crf)
     print(model.summary())
 
-    model.compile(loss = 'categorical_crossentropy', optimizer = 'adam', metrics=["accuracy"])
+    # model.compile(loss = 'categorical_crossentropy', optimizer = 'adam', metrics=["accuracy"])
+    model.compile(loss = crf.loss, optimizer = 'adam', metrics=["accuracy"])
 
     early_stopping = EarlyStopping(monitor="val_acc", patience=3)
 
@@ -94,8 +95,8 @@ def train(trainingInfo, trainingData, modelPath, weightPath, word2vec_model_file
 # main
 training_info_filePath = "./ner_training_char.info"
 training_data_filePath = "./ner_training_char.data"
-output_keras_model_file = "./ner_keras_model"
-output_keras_model_weights_file = "./keras_model_weights"
+output_keras_model_file = "./ner_keras_model_withCRF"
+output_keras_model_weights_file = "./keras_model_weights_withCRF"
 word2vec_model_file = "./word2vec.model"
 
 print ('Loading vocab...')

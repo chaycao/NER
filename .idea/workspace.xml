@@ -2,37 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dede05e0-a1aa-4876-bb9a-d107feb6dcd0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/字向量_双向LSTM_112标注/keras_model_weights" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/doc/实验记录.md" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/word2vec_model/data/小数据5000/人名识别/original_with_tag_people.utf8" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/word2vec_model/data/小数据5000/人名识别/original_with_tag_people_cut128.utf8" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/word2vec_model/model/小数据5000/word2vec.model" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/word2vec_model/model/小数据5000/word2vec.vector" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/人名识别/__init__.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/人名识别/lstm.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/人名识别/ner_training_char.data" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/人名识别/ner_training_char.info" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/人名识别/original_with_tag_people.utf8" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/人名识别/original_with_tag_people_cut128.utf8" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/人名识别/pretreat.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/人名识别/train_keras_model.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/人名识别/word2vec.model" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/人名识别/word2vec.vector" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/字向量_双向LSTM_112标注/char2vec.model" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/字向量_双向LSTM_112标注/ner_keras_model" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/字向量_双向LSTM_112标注/ner_training_char.data" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/字向量_双向LSTM_112标注/ner_training_char.info" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/字向量_双向LSTM_112标注/train_keras_model.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/字向量_双向LSTM_112标注/实验结果.md" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/人名识别/keras_model_weights" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/人名识别/ner_keras_model" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/人名识别/predict.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/doc/记录.md" afterPath="$PROJECT_DIR$/doc/记录.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pretreat.py" afterPath="$PROJECT_DIR$/pretreat.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/train_keras_model.py" afterPath="$PROJECT_DIR$/train_keras_model.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/word2vec_model/pre_caoy.py" afterPath="$PROJECT_DIR$/word2vec_model/pre_caoy.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/word2vec_model/prepare_word2vec_train_dataset.py" afterPath="$PROJECT_DIR$/word2vec_model/prepare_word2vec_train_dataset.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/word2vec_model/train_word2vec_model.py" afterPath="$PROJECT_DIR$/word2vec_model/train_word2vec_model.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ner_training.data" afterPath="$PROJECT_DIR$/ner_training_char.data" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/ner_training.info" afterPath="$PROJECT_DIR$/ner_training_char.info" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/人名识别/ner_training_char.data" afterPath="$PROJECT_DIR$/人名识别/ner_training_char.data" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/人名识别/train_keras_model.py" afterPath="$PROJECT_DIR$/人名识别/train_keras_model.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -48,6 +23,7 @@
     <SUITE FILE_PATH="coverage/ner$train_keras_model__1_.coverage" NAME="train_keras_model (1) Coverage Results" MODIFIED="1508852887645" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/ner$lstm.coverage" NAME="lstm Coverage Results" MODIFIED="1508847057484" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/人名识别" />
     <SUITE FILE_PATH="coverage/ner$train_keras_model.coverage" NAME="train_keras_model Coverage Results" MODIFIED="1508854476632" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/人名识别" />
+    <SUITE FILE_PATH="coverage/ner$predict.coverage" NAME="predict Coverage Results" MODIFIED="1508897416017" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/人名识别" />
     <SUITE FILE_PATH="coverage/ner$Unittests_in_test_py.coverage" NAME="Unittests in test.py Coverage Results" MODIFIED="1508846682224" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/人名识别" />
     <SUITE FILE_PATH="coverage/ner$pre_caoy.coverage" NAME="pre_caoy Coverage Results" MODIFIED="1508849149808" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/word2vec_model" />
     <SUITE FILE_PATH="coverage/ner$train_word2vec_model.coverage" NAME="train_word2vec_model Coverage Results" MODIFIED="1508837960676" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/word2vec_model" />
@@ -56,11 +32,23 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="train_keras_model.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/train_keras_model.py">
+      <file leaf-file-name="predict.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/人名识别/predict.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="85" column="0" lean-forward="true" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
+            <state relative-caret-position="292">
+              <caret line="42" column="44" lean-forward="false" selection-start-line="42" selection-start-column="44" selection-end-line="42" selection-end-column="44" />
+              <folding>
+                <element signature="e#25#65#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="original_with_tag_people_cut128.utf8" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/word2vec_model/data/小数据5000/人名识别/original_with_tag_people_cut128.utf8">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="117775">
+              <caret line="4711" column="3" lean-forward="false" selection-start-line="4711" selection-start-column="2" selection-end-line="4711" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -69,8 +57,8 @@
       <file leaf-file-name="train_keras_model.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/人名识别/train_keras_model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="81" column="92" lean-forward="true" selection-start-line="81" selection-start-column="92" selection-end-line="81" selection-end-column="92" />
+            <state relative-caret-position="-726">
+              <caret line="62" column="32" lean-forward="false" selection-start-line="62" selection-start-column="32" selection-end-line="62" selection-end-column="32" />
               <folding>
                 <element signature="e#184#202#0" expanded="true" />
               </folding>
@@ -78,11 +66,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
-        <entry file="jar://D:/Program Files/Python/Python36/Lib/site-packages/Keras-2.0.6-py3.6.egg!/keras/models.py">
+      <file leaf-file-name="test_keras_model.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test_keras_model.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="378" column="8" lean-forward="false" selection-start-line="378" selection-start-column="8" selection-end-line="378" selection-end-column="8" />
+            <state relative-caret-position="100">
+              <caret line="32" column="4" lean-forward="false" selection-start-line="32" selection-start-column="4" selection-end-line="38" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -105,12 +93,12 @@
       <find>nl</find>
       <find>ns</find>
       <find>nr</find>
-      <find>P</find>
       <find>１/m</find>
       <find>PB</find>
       <find>[</find>
       <find>cut_word</find>
       <find>corpus_tags</find>
+      <find>P</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -142,6 +130,7 @@
         <option value="$PROJECT_DIR$/人名识别/pretreat.py" />
         <option value="$PROJECT_DIR$/人名识别/__init__.py" />
         <option value="$PROJECT_DIR$/人名识别/train_keras_model.py" />
+        <option value="$PROJECT_DIR$/人名识别/predict.py" />
       </list>
     </option>
   </component>
@@ -172,7 +161,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -364,6 +352,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -395,26 +384,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.train_keras_model">
-    <configuration default="false" name="pre_caoy" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/word2vec_model" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="ner" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/word2vec_model/pre_caoy.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Python.predict">
     <configuration default="false" name="pretreat" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -486,6 +456,25 @@
       <module name="ner" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/train_keras_model.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="predict" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/人名识别" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="ner" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/人名识别/predict.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -640,19 +629,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.pre_caoy" />
-      <item index="1" class="java.lang.String" itemvalue="Python.pretreat" />
-      <item index="2" class="java.lang.String" itemvalue="Python.pretreat (1)" />
-      <item index="3" class="java.lang.String" itemvalue="Python.train_keras_model" />
-      <item index="4" class="java.lang.String" itemvalue="Python.train_keras_model (1)" />
+      <item index="0" class="java.lang.String" itemvalue="Python.pretreat" />
+      <item index="1" class="java.lang.String" itemvalue="Python.pretreat (1)" />
+      <item index="2" class="java.lang.String" itemvalue="Python.train_keras_model" />
+      <item index="3" class="java.lang.String" itemvalue="Python.train_keras_model (1)" />
+      <item index="4" class="java.lang.String" itemvalue="Python.predict" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.train_keras_model" />
-        <item index="1" class="java.lang.String" itemvalue="Python.train_keras_model (1)" />
-        <item index="2" class="java.lang.String" itemvalue="Python.pretreat" />
-        <item index="3" class="java.lang.String" itemvalue="Python.pretreat (1)" />
-        <item index="4" class="java.lang.String" itemvalue="Python.pre_caoy" />
+        <item index="0" class="java.lang.String" itemvalue="Python.predict" />
+        <item index="1" class="java.lang.String" itemvalue="Python.train_keras_model" />
+        <item index="2" class="java.lang.String" itemvalue="Python.train_keras_model (1)" />
+        <item index="3" class="java.lang.String" itemvalue="Python.pretreat" />
+        <item index="4" class="java.lang.String" itemvalue="Python.pretreat (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -709,7 +698,14 @@
       <option name="project" value="LOCAL" />
       <updated>1508769550593</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="词向量，句子长度128">
+      <created>1508854577016</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1508854577016</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -723,16 +719,15 @@
   <component name="ToolWindowManager">
     <frame x="1358" y="-8" width="1456" height="876" extended-state="6" />
     <layout>
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2701389" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.47058824" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24027778" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281046" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2653595" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -741,6 +736,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3281046" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -755,38 +751,19 @@
     <MESSAGE value="加上了earlyStoping" />
     <MESSAGE value="data" />
     <MESSAGE value="双向LSTM，字向量" />
-    <option name="LAST_COMMIT_MESSAGE" value="双向LSTM，字向量" />
+    <MESSAGE value="词向量，句子长度128" />
+    <option name="LAST_COMMIT_MESSAGE" value="词向量，句子长度128" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/word2vec_model/train_word2vec_model.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="775">
-          <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pretreat.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4300">
-          <caret line="177" column="13" lean-forward="true" selection-start-line="177" selection-start-column="13" selection-end-line="177" selection-end-column="13" />
-          <folding>
-            <element signature="e#144#155#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/word2vec_model/prepare_word2vec_train_dataset.cmd" />
     <entry file="file://$PROJECT_DIR$/word2vec_model/prepare_caoy.py" />
     <entry file="file://$PROJECT_DIR$/word2vec_model/data/original_with_tag.utf8">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="108" column="0" lean-forward="true" selection-start-line="108" selection-start-column="0" selection-end-line="108" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -830,7 +807,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -876,7 +852,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="458">
           <caret line="34" column="36" lean-forward="false" selection-start-line="34" selection-start-column="36" selection-end-line="34" selection-end-column="36" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -884,7 +859,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
           <caret line="16" column="45" lean-forward="false" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="45" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -892,7 +866,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -900,7 +873,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="50">
           <caret line="2" column="35" lean-forward="true" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -908,7 +880,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="25">
           <caret line="1" column="10" lean-forward="true" selection-start-line="1" selection-start-column="10" selection-end-line="1" selection-end-column="10" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -916,7 +887,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
           <caret line="6" column="8" lean-forward="false" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -924,7 +894,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="3" lean-forward="false" selection-start-line="0" selection-start-column="2" selection-end-line="0" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -932,7 +901,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
           <caret line="3582" column="4" lean-forward="false" selection-start-line="3582" selection-start-column="3" selection-end-line="3582" selection-end-column="4" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -940,7 +908,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
           <caret line="4" column="5" lean-forward="false" selection-start-line="4" selection-start-column="4" selection-end-line="4" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -948,7 +915,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-62988">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -956,7 +922,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
           <caret line="3" column="22" lean-forward="false" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -964,7 +929,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="125">
           <caret line="14" column="14" lean-forward="true" selection-start-line="1" selection-start-column="4" selection-end-line="14" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -972,7 +936,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="277">
           <caret line="40" column="0" lean-forward="true" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -980,7 +943,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -988,19 +950,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-350">
           <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding>
-            <element signature="e#23#32#0" expanded="true" />
-            <marker date="1508848288977" expanded="true" signature="1786:1912" ph="..." />
-            <marker date="1508848288977" expanded="true" signature="1977:2454" ph="..." />
-            <marker date="1508848288977" expanded="true" signature="2062:2403" ph="..." />
-            <marker date="1508848288977" expanded="true" signature="2145:2403" ph="..." />
-            <marker date="1508848288977" expanded="true" signature="2203:2309" ph="..." />
-            <marker date="1508848288977" expanded="true" signature="2474:2949" ph="..." />
-            <marker date="1508848288977" expanded="true" signature="2484:2921" ph="..." />
-            <marker date="1508848288977" expanded="true" signature="2778:2900" ph="..." />
-            <marker date="1508848288977" expanded="true" signature="3022:3252" ph="..." />
-            <marker date="1508848288977" expanded="true" signature="3083:3197" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1016,7 +965,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
           <caret line="7" column="8" lean-forward="true" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1024,15 +972,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
           <caret line="14" column="3" lean-forward="false" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/word2vec_model/data/小数据5000/人名识别/original_with_tag_people_cut128.utf8">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25">
-          <caret line="4697" column="584" lean-forward="true" selection-start-line="4697" selection-start-column="584" selection-end-line="4697" selection-end-column="584" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1040,7 +979,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="477">
           <caret line="116" column="13" lean-forward="true" selection-start-line="116" selection-start-column="13" selection-end-line="116" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1048,7 +986,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="8" lean-forward="false" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1056,15 +993,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-29539">
           <caret line="0" column="1631" lean-forward="false" selection-start-line="0" selection-start-column="1631" selection-end-line="0" selection-end-column="1631" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/人名识别/ner_training_char.data">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1072,15 +1000,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/人名识别/ner_training_char.info">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="25946" column="21" lean-forward="true" selection-start-line="25946" selection-start-column="21" selection-end-line="25946" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1088,7 +1007,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="448">
           <caret line="108" column="40" lean-forward="true" selection-start-line="108" selection-start-column="40" selection-end-line="108" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1100,33 +1018,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pretreat.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="91">
-          <caret line="133" column="4" lean-forward="false" selection-start-line="133" selection-start-column="4" selection-end-line="133" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/人名识别/pretreat.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="800">
-          <caret line="37" column="14" lean-forward="true" selection-start-line="37" selection-start-column="14" selection-end-line="37" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/train_keras_model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="85" column="0" lean-forward="true" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
+        <state relative-caret-position="1550">
+          <caret line="85" column="0" lean-forward="false" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="jar://D:/Program Files/Python/Python36/Lib/site-packages/Keras-2.0.6-py3.6.egg!/keras/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
+        <state relative-caret-position="8950">
           <caret line="378" column="8" lean-forward="false" selection-start-line="378" selection-start-column="8" selection-end-line="378" selection-end-column="8" />
           <folding />
         </state>
@@ -1140,10 +1042,78 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/人名识别/ner_training_char.data">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/人名识别/ner_training_char.info">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="25946" column="21" lean-forward="true" selection-start-line="25946" selection-start-column="21" selection-end-line="25946" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pretreat.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2049">
+          <caret line="88" column="0" lean-forward="false" selection-start-line="88" selection-start-column="0" selection-end-line="88" selection-end-column="0" />
+          <folding>
+            <element signature="e#144#155#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/人名识别/pretreat.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/Program Files/Python/Python36/Lib/site-packages/gensim/models/word2vec.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="415" column="6" lean-forward="false" selection-start-line="415" selection-start-column="6" selection-end-line="415" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_keras_model.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="32" column="4" lean-forward="false" selection-start-line="32" selection-start-column="4" selection-end-line="38" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/人名识别/predict.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="292">
+          <caret line="42" column="44" lean-forward="false" selection-start-line="42" selection-start-column="44" selection-end-line="42" selection-end-column="44" />
+          <folding>
+            <element signature="e#25#65#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/word2vec_model/data/小数据5000/人名识别/original_with_tag_people_cut128.utf8">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117775">
+          <caret line="4711" column="3" lean-forward="false" selection-start-line="4711" selection-start-column="2" selection-end-line="4711" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/人名识别/train_keras_model.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="81" column="92" lean-forward="true" selection-start-line="81" selection-start-column="92" selection-end-line="81" selection-end-column="92" />
+        <state relative-caret-position="-726">
+          <caret line="62" column="32" lean-forward="false" selection-start-line="62" selection-start-column="32" selection-end-line="62" selection-end-column="32" />
           <folding>
             <element signature="e#184#202#0" expanded="true" />
           </folding>
